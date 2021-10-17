@@ -20,7 +20,6 @@ export default function Header() {
       >
         <Heading
           fontSize="3xl"
-          fontWeight="bold"
           letterSpacing="tight"
         >
           Qual o próximo rolê?
