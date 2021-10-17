@@ -22,9 +22,8 @@ export default function Header() {
           fontSize="3xl"
           fontWeight="bold"
           letterSpacing="tight"
-          width="64"
         >
-          What's next?
+          Qual o próximo rolê?
         </Heading>
       </Flex>
     </Box>

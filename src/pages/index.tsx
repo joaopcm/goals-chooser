@@ -1,6 +1,7 @@
 import { GetServerSideProps } from "next";
 
 import { notion, Title, MultiSelect, Select } from '../services/notion'
+import SEO from '../components/SEO'
 
 type Type = {
   id: string;
@@ -20,7 +21,10 @@ interface HomeProps {
 
 export default function Home({ goals }: HomeProps) {
   return (
-    <h1>Hello world!</h1>
+    <>
+      <SEO title="Qual o próximo rolê?" />
+      <h1>Hello world!</h1>
+    </>
   )
 }
 
