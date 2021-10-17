@@ -2,6 +2,7 @@ import { useState, useMemo } from 'react';
 import { GetServerSideProps } from "next";
 import {
   Heading,
+  Text,
   Select as SelectInput,
   Button,
   VStack,
@@ -113,7 +114,10 @@ export default function Home({ goals }: HomeProps) {
           <ModalHeader>Se liga nesse rolê!</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            Que tal vocês abraçarem o rolê "<strong>{result?.name}</strong>"?
+            <VStack spacing={2} alignItems="flex-start">
+              <span>Que tal vocês abraçarem o rolê "<strong>{result?.name}</strong>"?</span>
+              <Text color="gray.500" fontWeight="bold">OBS: Lembre-se que eu te amo muito ❤️</Text>
+            </VStack>
           </ModalBody>
 
           <ModalFooter>
