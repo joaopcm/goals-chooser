@@ -150,6 +150,7 @@ export default function Home({ goals }: HomeProps) {
           <option value="experience">Ter uma experiência diferenciada</option>
           <option value="food">Comer bem</option>
           <option value="content">Assistir algo</option>
+          <option value="place">Conhecer um lugar</option>
         </SelectInput>
 
         <SelectInput
